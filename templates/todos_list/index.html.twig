@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Todo Lists</h1>
+
+    <a href="{{ path('todos_list_create') }}">Create a new list</a>
+
+    <ul>
+        {% for todosList in todosLists %}
+            <li>{{ todosList.title }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

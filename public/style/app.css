@@ -1,0 +1,91 @@
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Police de caractère pour l'application */
+    background-color: #f4f4f4; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+    line-height: 1.6; /* Espacement des lignes */
+}
+
+/* En-tête */
+header {
+    background: #35424a; /* Couleur d'arrière-plan de l'en-tête */
+    color: #ffffff; /* Couleur du texte de l'en-tête */
+    padding: 10px 20px; /* Espacement */
+    text-align: center; /* Centre le texte */
+}
+
+h1 {
+    margin-bottom: 10px; /* Espace sous le titre */
+}
+
+/* Liens */
+a {
+    color: #35424a; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+a:hover {
+    text-decoration: underline; /* Souligner au survol */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px; /* Largeur maximale du conteneur */
+    margin: 20px auto; /* Centrer le conteneur */
+    padding: 20px; /* Espacement interne */
+    background: #ffffff; /* Couleur d'arrière-plan du conteneur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre autour du conteneur */
+}
+
+/* Formulaire */
+form {
+    display: flex; /* Affichage en flexbox */
+    flex-direction: column; /* Orientation verticale */
+}
+
+form input[type="text"],
+form input[type="submit"] {
+    padding: 10px; /* Espacement interne */
+    margin: 10px 0; /* Espacement entre les éléments */
+    border: 1px solid #ccc; /* Bordure des champs de saisie */
+    border-radius: 4px; /* Coins arrondis */
+}
+
+form input[type="submit"] {
+    background: #35424a; /* Couleur d'arrière-plan du bouton */
+    color: #ffffff; /* Couleur du texte du bouton */
+    cursor: pointer; /* Changer le curseur sur le bouton */
+}
+
+form input[type="submit"]:hover {
+    background: #3d5a6f; /* Couleur d'arrière-plan au survol */
+}
+
+/* Liste des tâches */
+ul {
+    list-style-type: none; /* Pas de puces */
+    padding: 0; /* Pas d'espacement interne */
+}
+
+ul li {
+    background: #e2e2e2; /* Couleur d'arrière-plan des éléments de la liste */
+    margin: 10px 0; /* Espacement entre les éléments de la liste */
+    padding: 10px; /* Espacement interne */
+    border-radius: 4px; /* Coins arrondis */
+}
+
+/* Zone de message */
+.message {
+    margin: 20px 0; /* Espacement vertical */
+    padding: 10px; /* Espacement interne */
+    border-radius: 4px; /* Coins arrondis */
+    background: #dff0d8; /* Couleur de fond pour les messages */
+    color: #3c763d; /* Couleur du texte pour les messages */
+}

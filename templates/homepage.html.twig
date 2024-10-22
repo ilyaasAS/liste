@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <h1>{{ message }}</h1>
+    <p>Vous pouvez commencer à gérer vos listes de tâches.</p>
+    <a href="{{ path('todos_list_index') }}">Voir les listes de tâches</a>
+{% endblock %}
